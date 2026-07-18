@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitar Orçamento | Manga Transportes</title>
+  <meta name="description" content="Solicite um orçamento de fretamento rural, transporte empresarial ou excursões com a Manga Transportes. Resposta rápida da nossa equipe.">
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Manga Transportes" width="120px" height="75px">
+      </a>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <nav id="nav">
+      <a href="index.html">Início</a>
+      <a href="index.html#sobre">Sobre</a>
+      <a href="index.html#servicos">Serviços</a>
+      <a href="index.html#frota">Frota</a>
+      <a href="index.html#feedbacks">Feedbacks</a>
+      <a href="index.html#contato">Contato</a>
+      <a href="orcamento.html" class="btn-orcamento">Solicitar Orçamento</a>
+    </nav>
+  </header>
+
+  <section class="orcamento">
+    <div class="container">
+
+      <div class="titulo">
+        <h1>Solicite seu Orçamento</h1>
+        <p>Preencha o formulário abaixo e nossa equipe entrará em contato o mais rápido possível.</p>
+      </div>
+
+      <form id="formOrcamento">
+
+        <div class="grupo">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+        </div>
+
+        <div class="grupo">
+          <label for="empresa">Empresa (Opcional)</label>
+          <input type="text" id="empresa" placeholder="Nome da empresa">
+        </div>
+
+        <div class="duplo">
+          <div class="grupo">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" placeholder="(44) 90000-0000" required>
+          </div>
+
+          <div class="grupo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="seuemail@email.com" required>
+          </div>
+        </div>
+
+        <div class="duplo">
+          <div class="grupo">
+            <label for="origem">Cidade de Origem</label>
+            <input type="text" id="origem" placeholder="Cidade de origem" required>
+          </div>
+
+          <div class="grupo">
+            <label for="destino">Cidade de Destino</label>
+            <input type="text" id="destino" placeholder="Cidade de destino" required>
+          </div>
+        </div>
+
+        <div class="grupo">
+          <label for="tipoCarga">Tipo de Carga</label>
+          <select id="tipoCarga" required>
+            <option value="">Selecione uma opção</option>
+            <option>Carga Fracionada</option>
+            <option>Carga Fechada</option>
+            <option>Produtos Industriais</option>
+            <option>Alimentos</option>
+            <option>Outros</option>
+          </select>
+        </div>
+
+        <div class="grupo">
+          <label for="peso">Peso Aproximado (Kg)</label>
+          <input type="number" id="peso" placeholder="Ex: 500" min="0">
+        </div>
+
+        <div class="grupo">
+          <label for="info">Informações Adicionais</label>
+          <textarea id="info" placeholder="Conte mais detalhes sobre o transporte que você precisa"></textarea>
+        </div>
+
+        <button type="submit">
+          Solicitar Orçamento
+        </button>
+
+      </form>
+
+    </div>
+  </section>
+
+  <footer class="footer-moderno">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="col-info">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Manga Transportes" class="footer-logo-img">
+          </a>
+          <div>
+            <strong>Horário de Atendimento:</strong> <br>
+            <span>Segunda a Sábado: 08:00h - 18:00h</span>
+          </div>
+          <div class="contato-item">
+            <br>
+            <span><strong>Endereço:</strong><br>Rua Damião Albano de Farias, 571<br>Brasilândia do Sul - PR</span>
+          </div>
+        </div>
+
+        <div class="col-links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="index.html#sobre">Sobre Nós</a></li>
+            <li><a href="index.html#servicos">Serviços</a></li>
+            <li><a href="index.html#frota">Nossa Frota</a></li>
+            <li><a href="index.html#feedbacks">Feedbacks</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="col-contato">
+          <h4>Contato</h4>
+          <div class="contato-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+55 (44) 98438-5432</span>
+          </div>
+          <br>
+          <div class="contato-item">
+            <i class="fas fa-envelope"></i>
+            <span>mangatransportes@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="col-legal">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+            <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="container">
+        &copy; 2026, I da Silva & Cia Ltda. Todos os direitos reservados. CNPJ 44.625.209/0001-16.
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast">Orçamento solicitado com sucesso!</div>
+  <script src="script.js"></script>
+</body>
+</html>
